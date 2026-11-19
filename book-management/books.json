@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Node.js Guide",
+    "author": "David Miller",
+    "price": 450
+  },
+  {
+    "id": 2,
+    "title": "Ramayan",
+    "author": "valmiki",
+    "price": 500
+  },
+  {
+    "id": 3,
+    "title": "The Hobbit",
+    "author": "Marcus stoinis",
+    "price": 600
+  }
+]

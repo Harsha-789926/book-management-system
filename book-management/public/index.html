@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Book Management System</h1>
+
+    
+
+        <div id="message"></div>
+
+        <div class="form-container">
+
+            <h2 id="formTitle">Add New Book</h2>
+
+            <form id="bookForm">
+
+                <input
+                    type="hidden"
+                    id="bookId"
+                >
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter Book Title"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="author"
+                    placeholder="Enter Author Name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="price"
+                    placeholder="Enter Book Price"
+                    min="0"
+                    step="0.01"
+                    required
+                >
+
+                <button type="submit" id="submitBtn">
+                    Add Book
+                </button>
+
+                <button
+                    type="button"
+                    id="cancelBtn"
+                    hidden
+                >
+                    Cancel Edit
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="search-container">
+
+            <h2>Search Book</h2>
+
+            <input
+                type="number"
+                id="searchId"
+                placeholder="Enter Book ID"
+                min="1"
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+            <button id="showAllBtn">
+                Show All Books
+            </button>
+
+            <div id="searchResult"></div>
+
+        </div>
+
+        <div class="book-container">
+
+            <h2>Available Books</h2>
+
+            <div id="bookList">
+                Loading books...
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
